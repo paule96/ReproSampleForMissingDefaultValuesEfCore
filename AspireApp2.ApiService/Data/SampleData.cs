@@ -13,5 +13,12 @@ namespace AspireApp2.ApiService.Data
         public bool InitBoolWithAttributes { get; set; } = false;
         [DefaultValue(false)]
         public bool InitBoolWithDefaultValueAttribute { get; set; }
+
+        public bool AfterInitBool { get; set; } = false;
+        [NotNull]
+        [Required]
+        public bool AfterInitBoolWithAttributes { get; set; } = false;
+        [DefaultValue(false)]
+        public bool AfterInitBoolWithDefaultValueAttribute { get; set; }
     }
 }

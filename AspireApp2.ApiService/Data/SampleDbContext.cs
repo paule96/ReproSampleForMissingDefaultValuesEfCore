@@ -9,5 +9,6 @@ namespace AspireApp2.ApiService.Data
         }
 
         public DbSet<SampleData> SampleData { get; set; }
+        public DbSet<SampleNewTable> SampleNewTables { get; set; }
     }
 }

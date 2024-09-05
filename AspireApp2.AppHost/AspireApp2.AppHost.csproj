@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>47fbbd1d-6186-4864-bbee-2e92aba15217</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireApp2.ApiService\AspireApp2.ApiService.csproj" />
+    <ProjectReference Include="..\AspireApp2.Web\AspireApp2.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.0" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.2.0" />
+    <PackageReference Include="Nall.Aspire.Hosting.DependsOn.PostgreSQL" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>
